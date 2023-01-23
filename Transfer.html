@@ -132,9 +132,9 @@
         <select class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           
           <option value="">Select Network Type</option>
-          <option value="">Eco (funds may available in next 48hr 0.5% fee applicable)</option>
-         <option value=""> Fast (funds may available in next 24hr 1.5% fee applicable)</option>
-          <option value="">Fastest(funds may available in next 12hr  2.5% fee applicable)</option>
+          <option value="">Eco (funds may available in next 48hr 0.5%  + 0.5% fee applicable)</option>
+         <option value=""> Fast (funds may available in next 24hr 1.5% + 1 % fee applicable)</option>
+          <option value="">Fastest(funds may available in next 12hr  2.5%  + 1.5 % fee applicable)</option>
         </select>
         </div>
         <br>
@@ -145,7 +145,7 @@
         
     
       
-      <button type="submit" value ="SUBMITFORM" class="btn btn-success"> Send </button> <br>
+      <button type="submit" value ="SUBMITFORM" class="btn btn-success"  onclick="alert(' Congratulations - Transfer is on the way - - -Note additional fee is required in the wallet to complete this Transfer---> Send </button> <br>
       <br>
       
     </form>
@@ -155,40 +155,7 @@
     </div>
    <br>
     <br>
-    <script type="text/javascript">
-      var login_attempts=2;
-      function check_form()
-      {
-       var name=document.getElementById("name").value;
-       var pass=document.getElementById("pass").value;
-       if(name=="talkerscode" && pass=="talkerscode")
-       {
-        alert("SuccessFully Logged In");
-        document.getElementById("name").value="";
-        document.getElementById("pass").value="";
-       }
-       else
-       {
-        if(login_attempts==0)
-        {
-         alert("No Transfer Attempts Available-Wallet De-activated - kindly contact administration");
-        }
-        else
-        {
-         login_attempts=login_attempts-1;
-         alert("Please Enter the Vaild Address Transfer Failed Now Only "+login_attempts+"  Attempts Available");
-         if(login_attempts==0)
-         {
-          document.getElementById("name").disabled=true;
-          document.getElementById("pass").disabled=true;
-          document.getElementById("form1").disabled=true;
-         }
-        }
-       }
-       
-       return false;
-      } 
-      </script>
+  
   
 </div>
 </div>
